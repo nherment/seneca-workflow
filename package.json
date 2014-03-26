@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/nherment/seneca-workflow",
   "dependencies": {
-    "worky": "0.1.1"
+    "worky": "0.2.0",
+    "underscore": "1.6.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "seneca": "*"
   }
 }

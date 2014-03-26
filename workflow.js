@@ -4,14 +4,15 @@
 var Worky = require('worky')
 var _ = require('underscore')
 
-function workflow(workflow) {
+function workflow(options) {
   var seneca = this
   var plugin = 'workflow'
 
-  var worky = new Worky(workflow)
+  var worky = new Worky(options.workflow)
 
   seneca.add({ role: plugin, cmd:'register' }, function(args, callback) {
     worky.register(args.name, args.func)
+    callback()
   })
 
   seneca.add({ role: plugin, cmd:'run' }, function(args, callback) {
