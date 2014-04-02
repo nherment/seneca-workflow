@@ -1,6 +1,6 @@
 {
   "name": "seneca-workflow",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "workflow plugin for seneca",
   "main": "workflow.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nherment/seneca-workflow",
   "dependencies": {
-    "worky": "0.2.0",
+    "worky": "0.2.x",
     "underscore": "1.6.0"
   },
   "devDependencies": {
