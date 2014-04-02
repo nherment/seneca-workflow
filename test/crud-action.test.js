@@ -16,8 +16,6 @@ seneca.use(require('../workflow.js'), {
   ]
 })
 
-seneca.use(require('../lib/workflow-crud-action.js'))
-
 
 describe('sn-crud', function () {
 

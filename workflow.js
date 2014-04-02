@@ -21,6 +21,8 @@ function workflow(options) {
     })
   })
 
+  seneca.use(require('./lib/workflow-crud-action.js'))
+
   return {
     name: plugin
   }
