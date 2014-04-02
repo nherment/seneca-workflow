@@ -4,14 +4,16 @@ This is a workflow engine based on [worky](https://github.com/nherment/worky)
 
 setup the workflow with your options:
 
-    seneca.use('workflow', [
-      {
-        "action": "myCustomAction",
-        "name": "first action",
-        "foo":"bar"
-      },
-      ...
-    ])
+    seneca.use('workflow', {
+      workflow: [
+        {
+          "action": "myCustomAction",
+          "name": "first action",
+          "foo":"bar"
+        },
+        ...
+      ]
+    })
 
 
 You can declare your own workflow functions:
@@ -25,3 +27,12 @@ Then execute the workflow on an item
 
     })
 
+# out of the box actions
+
+seneca-workflow defines a set of actions, all prefixed with ```sn-```.
+That means you should not use the ```sn-``` prefix for your own actions unless you
+want to override seneca's actions and you know what you are doing.
+
+## sn-crud
+
+TODO
