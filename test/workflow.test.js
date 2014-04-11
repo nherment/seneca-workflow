@@ -10,7 +10,7 @@ var assert = require('assert')
 seneca.use(require('../workflow.js'), {
   workflow: [
     {
-      'action': 'wy-filter',
+      'action': 'sc-filter',
       'name': 'editable only',
       'attributes': {
         'status': {'$in': ['new', 'open']}
