@@ -1,6 +1,6 @@
 {
   "name": "seneca-workflow",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "workflow plugin for seneca",
   "main": "workflow.js",
   "scripts": {
